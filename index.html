@@ -15,75 +15,74 @@
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
   </head>
   <body>
-    <h1>Hello World!</h1>
+    <div class="container">
+      <h2 id="date">Thursday June 28th</h2>
+      <div class="temp">
+        <h1>🌤 <span class="temperature" id="temperature"> 25°C </span></h1>
+      </div>
+
+      <h1 id="the-city" class="city">Mexico City</h1>
+      <h2 id="status">Cloudy</h2>
+      <form id="search-form">
+        <input id="city-value" class="text" placeholder="Enter your city..." />
+        <input type="submit" value="🔍" />
+      </form>
+      <button id="current-button" class="current">Current</button>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-2">
+          <h2>Tuesday</h2>
+          <br />
+          <p>☀️</p>
+          <br />
+          <h2>26°C</h2>
+        </div>
+        <div class="col-2">
+          <h2>Wednesday</h2>
+          <br />
+          <p>🌧</p>
+          <br />
+          <h2>16°C</h2>
+        </div>
+        <div class="col-2">
+          <h2>Thursday</h2>
+          <br />
+          <p>🌧</p>
+          <br />
+          <h2>18°C</h2>
+        </div>
+        <div class="col-2">
+          <h2>Friday</h2>
+          <br />
+          <p>🌥</p>
+          <br />
+          <h2>22°C</h2>
+        </div>
+        <div class="col-2">
+          <h2>Saturday</h2>
+          <br />
+          <p>🌤</p>
+          <br />
+          <h2>23°C</h2>
+        </div>
+        <div class="col-2">
+          <h2>Sunday</h2>
+          <br />
+          <p>⛈</p>
+          <br />
+          <h2>15°C</h2>
+        </div>
+      </div>
+    </div>
+    <h3>
+      <a href="https://github.com/cristinarmz/weather-app">
+        👩🏻‍💻Open-source code
+      </a>
+      By Cristina Ramírez
+    </h3>
   </body>
-  <div class="container">
-    <h2 id="date">Thursday June 28th</h2>
-    <div class="temp">
-      <h1>🌤 <span class="temperature" id="temperature"> 25°C </span></h1>
-    </div>
-
-    <h1 id="the-city" class="city">Mexico City</h1>
-    <h2 id="status">Cloudy</h2>
-    <form id="search-form">
-      <input id="city-value" class="text" placeholder="Enter your city..." />
-      <input type="submit" value="🔍" />
-    </form>
-    <button id="current-button" class="current">Current</button>
-  </div>
-
-  <div class="container">
-    <div class="row">
-      <div class="col-2">
-        <h2>Tuesday</h2>
-        <br />
-        <p>☀️</p>
-        <br />
-        <h2>26°C</h2>
-      </div>
-      <div class="col-2">
-        <h2>Wednesday</h2>
-        <br />
-        <p>🌧</p>
-        <br />
-        <h2>16°C</h2>
-      </div>
-      <div class="col-2">
-        <h2>Thursday</h2>
-        <br />
-        <p>🌧</p>
-        <br />
-        <h2>18°C</h2>
-      </div>
-      <div class="col-2">
-        <h2>Friday</h2>
-        <br />
-        <p>🌥</p>
-        <br />
-        <h2>22°C</h2>
-      </div>
-      <div class="col-2">
-        <h2>Saturday</h2>
-        <br />
-        <p>🌤</p>
-        <br />
-        <h2>23°C</h2>
-      </div>
-      <div class="col-2">
-        <h2>Sunday</h2>
-        <br />
-        <p>⛈</p>
-        <br />
-        <h2>15°C</h2>
-      </div>
-    </div>
-  </div>
-  <h3>
-    <a href="https://github.com/cristinarmz/weather-app">
-      👩🏻‍💻Open-source code
-    </a>
-    By Cristina Ramírez
-  </h3>
 
   <script src="index.js"></script>
 </html>
