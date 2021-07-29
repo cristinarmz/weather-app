@@ -1,3 +1,41 @@
-h1{
-    color: red;
+body {
+  margin: 30px;
+}
+h1 {
+  text-align: center;
+  padding: 20px;
+}
+h2 {
+  text-align: center;
+  font-size: 18px;
+  color: gray;
+}
+h3 {
+  text-align: center;
+  font-size: 16px;
+  color: gray;
+  margin-top: 20px;
+}
+p {
+  text-align: center;
+  font-size: 30px;
+}
+form {
+  text-align: center;
+  padding: 30px;
+}
+.units {
+  font-size: 16px;
+}
+.current {
+  border-radius: 20px;
+  margin: 0 auto;
+  display: block;
+  border: none;
+  padding: 10px 20px;
+  margin-bottom: 30px;
+}
+.current:hover {
+  background-color: rgb(122, 122, 122 01);
+  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.2);
 }
