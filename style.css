@@ -1,9 +1,11 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&display=swap");
+
 body {
   margin: 30px;
+  font-family: "Lato", sans-serif;
 }
 h1 {
   text-align: left;
-  padding: 20px;
 }
 h2 {
   text-align: left;
@@ -32,7 +34,8 @@ form {
   display: inline;
   border: none;
   padding: 5px 10px;
-
+  color: #ffff;
+  font-weight: 300;
   background: #30a64a;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
@@ -61,6 +64,8 @@ form {
   padding: 5px 10px 5px 10px;
   vertical-align: middle;
   display: inline;
+  color: #ffff;
+  font-weight: 300;
 }
 
 .text {
@@ -68,8 +73,25 @@ form {
   border: none;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 16.5px;
-  padding: 5px;
+  padding: 5px 10px;
+  font-weight: 300;
 }
 .date {
-  padding: 10px;
+  margin-top: 20px;
+  font-weight: 100;
+  font-size: 20px;
+}
+.city {
+  font-size: 40px;
+  font-weight: 300;
+}
+.temperature {
+  font-weight: 700;
+  font-size: 60px;
+}
+.status {
+  font-weight: 300;
+}
+.source {
+  text-align: center;
 }
