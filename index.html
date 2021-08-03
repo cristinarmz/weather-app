@@ -16,21 +16,23 @@
   </head>
   <body>
     <div class="container">
+      <form id="search-form">
+        <input id="city-value" class="text" placeholder="Enter your city..." />
+        <input class="submit-button" type="submit" value="Search" />
+      </form>
+      <button id="current-button" class="current">Current</button>
+
       <h2 id="date">Thursday June 28th</h2>
       <div class="temp">
         <h1>🌤 <span class="temperature" id="temperature"> 25°C </span></h1>
       </div>
-
-      <h1 id="the-city" class="city">Mexico City</h1>
-      <h2 id="status">Cloudy</h2>
-      <form id="search-form">
-        <input id="city-value" class="text" placeholder="Enter your city..." />
-        <input type="submit" value="🔍" />
-      </form>
-      <button id="current-button" class="current">Current</button>
+      <div>
+        <h1 id="the-city" class="city">Mexico City</h1>
+        <h2 id="status">Cloudy</h2>
+      </div>
     </div>
 
-    <div class="container">
+    <div class="second-container">
       <div class="row">
         <div class="col-2">
           <h2>Tuesday</h2>

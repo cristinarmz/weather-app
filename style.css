@@ -2,40 +2,74 @@ body {
   margin: 30px;
 }
 h1 {
-  text-align: center;
+  text-align: left;
   padding: 20px;
 }
 h2 {
-  text-align: center;
+  text-align: left;
   font-size: 18px;
   color: gray;
 }
 h3 {
-  text-align: center;
+  text-align: left;
   font-size: 16px;
   color: gray;
   margin-top: 20px;
 }
 p {
-  text-align: center;
+  text-align: left;
   font-size: 30px;
 }
 form {
-  text-align: center;
-  padding: 30px;
+  text-align: left;
+  display: inline;
 }
 .units {
   font-size: 16px;
 }
 .current {
   border-radius: 20px;
-  margin: 0 auto;
-  display: block;
+  display: inline;
   border: none;
-  padding: 10px 20px;
-  margin-bottom: 30px;
+  padding: 5px 10px;
+
+  background: #30a64a;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 .current:hover {
   background-color: rgb(122, 122, 122 01);
   box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+.container {
+  background: #fffffb;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 84px;
+  padding: 50px;
+  width: 70%;
+}
+
+.row {
+  padding: 50px;
+}
+
+.submit-button {
+  background: #388de7;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 16.5px;
+  border: none;
+  padding: 5px 10px 5px 10px;
+  vertical-align: middle;
+  display: inline;
+}
+
+.text {
+  background: #e9e8ed;
+  border: none;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 16.5px;
+  padding: 5px;
+}
+.date {
+  padding: 10px;
 }
