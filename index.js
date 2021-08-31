@@ -4,7 +4,13 @@ let currentDate = document.querySelector("#date");
 let now = new Date();
 let day = now.getDay();
 let hour = now.getHours();
+ if (hour < 10) {
+    hour = `0${hour}`;
+  }
 let minutes = now.getMinutes();
+if (minutes < 10) {
+    minutes = `0${minutes}`;
+  }
 
 let days = [
   "Sunday",
