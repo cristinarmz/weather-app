@@ -24,12 +24,27 @@
       <button id="current-button" class="current">Current location</button>
       <h2 class="date" id="date">Thursday June 28th</h2>
       <h1 id="the-city" class="city">Mexico City</h1>
-      <img
-      src="" alt="Clear" id="icon" class="float-left">
-      <h1><span class="temperature" id="temperature"> 25°C </span></h1>
-      <div class="temp"></div>
-      <h2 id="status" class="status">Cloudy</h2>
+      <div class="row">
 
+        <div class="col-2 col-icon">
+          <img
+      src="" alt="Clear" id="icon" class="icon-temp"></div>
+        <div class="col-3"><h1><span class="temperature" id="temperature"> 25°C </span></h1></div>
+        <div class="col-4">
+          Humidity:30%
+        </br>
+        Wind: 3.09km/h
+
+        </div>
+      </div>
+      <div class="col-2">
+  
+
+  <button class="status" id="status">
+    Cloudy
+  </button>
+      </div>
+    
       <div class="second-container">
         <div class="row">
           <div class="col-2">
@@ -79,8 +94,6 @@
     </div>
     <h3>
       <div class="source">
-
-     
       <a href="https://github.com/cristinarmz/weather-app">
         👩🏻‍💻Open-source code
       </a>
@@ -88,7 +101,5 @@
     </h3>
      </div>
   </body>
-  
-
   <script src="index.js"></script>
 </html>
