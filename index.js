@@ -27,8 +27,12 @@ function displayWeatherCondition(response) {
   let temperature = document.querySelector("#temperature");
   let description = document.querySelector("#status");
   let icon = document.querySelector("#icon");
+let humidity = document.querySelector("#humidity");
+let wind = document.querySelector("#wind");
 
 
+  humidity.innerHTML = response.data.main.humidity + "%";
+  wind.innerHTML = response.data.wind.speed + "km/h";
   city.innerHTML = response.data.name;
   temperature.innerHTML = Math.round(response.data.main.temp) + "°C";
   description.innerHTML = response.data.weather[0].main;
@@ -60,6 +64,16 @@ function getCurrentLocation(event) {
   event.preventDefault();
   navigator.geolocation.getCurrentPosition(searchLocation);
 }
+
+function displayConditions(){
+
+
+
+}
+
+  
+ 
+
 
 let searchForm = document.querySelector("#search-form");
 searchForm.addEventListener("submit", handleSubmit);

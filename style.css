@@ -77,7 +77,7 @@ form {
 }
 .date {
   text-align: left;
-  margin-top: 20px;
+  padding-top:30px;
   font-weight: 100;
   font-size: 20px;
 }
@@ -100,6 +100,8 @@ form {
 }
 .row{
   padding:0px;
+   display : flex;
+  align-items : center;
 }
 .col-4{
   padding:20px;
@@ -109,7 +111,7 @@ form {
   width: 70px;
 }
 .icon-temp{
-  padding-top: 15px;
+  
    width: 50px;
 }
 
@@ -122,4 +124,11 @@ form {
   margin-top:10px;
   margin-bottom:20px;
 
+}
+.text-conditions{
+
+      font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
 }
