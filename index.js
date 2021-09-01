@@ -44,7 +44,7 @@ let wind = document.querySelector("#wind");
   description.innerHTML = response.data.weather[0].main;
   icon.setAttribute("src", `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`);
   icon.setAttribute("alt", response.data.weather[0].description);
-  console.log(response.data.weather);
+  
 }
 
 function searchCity(city) {
@@ -71,15 +71,38 @@ function getCurrentLocation(event) {
   navigator.geolocation.getCurrentPosition(searchLocation);
 }
 
-function displayConditions(){
 
 
+function displayForecast() {
+  let forecastElement = document.querySelector("#forecast");
+  let forecastDays = ["Thu", "Fri", "Sat", "Sun"];
+  let forecastHTML = `<div class="row">`;
+  forecastDays.forEach(function (day) {
+    forecastHTML =
+      forecastHTML +
+      `
+      <div class="col-2">
+        <div class= "forecast-day">
+          <h2>Tuesday</h2>
+            </div>
+            <img
+          src="https://openweathermap.org/img/wn/01d@2x.png"
+          alt=""
+          width="42"
+        />
+            <div class= "forecast-temperatures">
+            <h2>10° 26°</h2>
+             </div>
+        </div>
+        </div>
+  `;
+  });
 
-}
-
+  forecastHTML = forecastHTML + `</div>`;
+  forecastElement.innerHTML = forecastHTML;
   
- 
-
+}
+displayForecast();
 
 let searchForm = document.querySelector("#search-form");
 searchForm.addEventListener("submit", handleSubmit);
