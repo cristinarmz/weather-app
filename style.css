@@ -95,7 +95,6 @@ form {
 	display: inline;
 }
 .row {
-	padding: 0px;
 	display: flex;
 	align-items: center;
 }
@@ -127,4 +126,12 @@ form {
 }
 .second-container {
 	display: flex;
+}
+.col-2 {
+	padding: 0px;
+	text-align: center;
+}
+.forecast-day {
+	text-align: center;
+	font-size: 18px;
 }

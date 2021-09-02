@@ -28,6 +28,14 @@ currentDate.innerHTML = `${currentDay}, ${hour}:${minutes}`;
 
 //
 
+function getForecast(coordinates) {
+	console.log(coordinates);
+	let apiKey = "3d60678186f78799cefdbe86f446fd00";
+	let apiUrl = `https://api.openweathermap.org/data/2.5/onecall?lat=${coordinates.lat}&lon=${coordinates.lon}&appid=${apiKey}&units=metric`;
+	console.log(apiUrl);
+	axios.get(apiUrl).then(displayForecast);
+}
+
 function displayWeatherCondition(response) {
 	let city = document.querySelector("#the-city");
 	let temperature = document.querySelector("#temperature");
@@ -46,6 +54,8 @@ function displayWeatherCondition(response) {
 		`http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
 	);
 	icon.setAttribute("alt", response.data.weather[0].description);
+
+	getForecast(response.data.coord);
 }
 
 function searchCity(city) {
@@ -72,35 +82,33 @@ function getCurrentLocation(event) {
 	navigator.geolocation.getCurrentPosition(searchLocation);
 }
 
-function displayForecast() {
+function displayForecast(response) {
+	console.log(response.data.daily);
 	let forecastElement = document.querySelector("#forecast");
-	let forecastDays = ["Thu", "Fri", "Sat", "Sun"];
+	let forecastDays = ["Thu", "Fri", "Sat", "Sun", "Mon", "Tue"];
 	let forecastHTML = `<div class="row">`;
 	forecastDays.forEach(function (day) {
 		forecastHTML =
 			forecastHTML +
 			`
       <div class="col-2">
-        <div class= "forecast-day">
-          <h2>Tuesday</h2>
-            </div>
+        <div class= "forecast-day">${day}</div>
             <img
           src="https://openweathermap.org/img/wn/01d@2x.png"
           alt=""
-          width="60"
+          width="42"
         />
             <div class= "forecast-temperatures">
             <h2>10° 26°</h2>
              </div>
         </div>
-        </div>
+    </div>
   `;
 	});
 
 	forecastHTML = forecastHTML + `</div>`;
 	forecastElement.innerHTML = forecastHTML;
 }
-displayForecast();
 
 let searchForm = document.querySelector("#search-form");
 searchForm.addEventListener("submit", handleSubmit);
