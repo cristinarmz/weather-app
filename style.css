@@ -1,134 +1,130 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&display=swap");
 
 body {
-  margin: 30px;
-  font-family: "Lato", sans-serif;
+	margin: 30px;
+	font-family: "Lato", sans-serif;
 }
 h1 {
-  text-align: left;
+	text-align: left;
 }
 h2 {
-  text-align: center;
-  font-size: 18px;
+	text-align: center;
+	font-size: 18px;
 }
 h3 {
-  text-align: center;
-  font-size: 16px;
-  color: gray;
-  margin-top: 20px;
+	text-align: center;
+	font-size: 16px;
+	color: gray;
+	margin-top: 20px;
 }
 p {
-  text-align: center;
-  font-size: 30px;
+	text-align: center;
+	font-size: 30px;
 }
 form {
-  text-align: left;
-  display: inline;
+	text-align: left;
+	display: inline;
 }
 .units {
-  font-size: 16px;
+	font-size: 16px;
 }
 .current {
-  border-radius: 20px;
-  display: inline;
-  border: none;
-  padding: 5px 20px;
-  color: #ffff;
-  font-weight: 300;
-  background: #30a64a;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+	border-radius: 20px;
+	display: inline;
+	border: none;
+	padding: 5px 20px;
+	color: #ffff;
+	font-weight: 300;
+	background: #30a64a;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 .current:hover {
-  background-color: rgb(122, 122, 122 01);
-  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.2);
+	background-color: rgb(122, 122, 122 01);
+	box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.2);
 }
 
 .container {
-  background: #fffffb;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  border-radius: 84px;
-  padding: 50px;
-  width: 70%;
-}
-
-.row {
-  padding: 50px;
+	background: #fffffb;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+	border-radius: 84px;
+	padding: 50px;
+	width: 70%;
 }
 
 .submit-button {
-  background: #388de7;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  border-radius: 16.5px;
-  border: none;
-  padding: 5px 20px;
-  vertical-align: middle;
-  display: inline;
-  color: #ffff;
-  font-weight: 300;
+	background: #388de7;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+	border-radius: 16.5px;
+	border: none;
+	padding: 5px 20px;
+	vertical-align: middle;
+	display: inline;
+	color: #ffff;
+	font-weight: 300;
 }
 
 .text {
-  background: #e9e8ed;
-  border: none;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  border-radius: 16.5px;
-  padding: 5px 100px 5px 10px;
-  font-weight: 300;
+	background: #e9e8ed;
+	border: none;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+	border-radius: 16.5px;
+	padding: 5px 100px 5px 10px;
+	font-weight: 300;
 }
 .date {
-  text-align: left;
-  padding-top:30px;
-  font-weight: 100;
-  font-size: 20px;
+	text-align: left;
+	padding-top: 30px;
+	font-weight: 100;
+	font-size: 20px;
 }
 .city {
-  font-size: 40px;
-  font-weight: 300;
+	font-size: 40px;
+	font-weight: 300;
 }
 .temperature {
-  font-weight: 700;
-  font-size: 60px;
+	font-weight: 700;
+	font-size: 60px;
 }
 .status {
-  font-weight: 300;
+	font-weight: 300;
 }
 .source {
-  text-align: center;
+	text-align: center;
 }
-.temp{
-  display:inline;
+.temp {
+	display: inline;
 }
-.row{
-  padding:0px;
-   display : flex;
-  align-items : center;
+.row {
+	padding: 0px;
+	display: flex;
+	align-items: center;
 }
-.col-4{
-  padding:20px;
-  text-align: right;
+.col-4 {
+	padding: 20px;
+	text-align: right;
 }
-.col-icon{
-  width: 70px;
+.col-icon {
+	width: 70px;
 }
-.icon-temp{
-  
-   width: 50px;
+.icon-temp {
+	width: 50px;
 }
 
-.status{
-  background: #F3EFEC;
-  border:none;
-  border-radius:25px;
-  padding: 5px 25px;
-  cursor: default !important;
-  margin-top:10px;
-  margin-bottom:20px;
-
+.status {
+	background: #f3efec;
+	border: none;
+	border-radius: 25px;
+	padding: 5px 25px;
+	cursor: default !important;
+	margin-top: 10px;
+	margin-bottom: 20px;
 }
-.text-conditions{
-
-      font-size: 1rem;
-    font-weight: 400;
-    line-height: 1.5;
-    color: #212529;
+.text-conditions {
+	font-size: 1rem;
+	font-weight: 400;
+	line-height: 1.5;
+	color: #212529;
+}
+.second-container {
+	display: flex;
 }
