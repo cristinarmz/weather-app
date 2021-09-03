@@ -135,3 +135,6 @@ form {
 	text-align: center;
 	font-size: 18px;
 }
+.forecast-temperature-max {
+	color: #919191;
+}
